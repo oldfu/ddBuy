@@ -15,6 +15,9 @@ const Mine = () => import('../views/mine/Mine.vue');
 // 地图
 const Map = () => import('../views/home/components/map/Map.vue');
 
+// 搜索页
+const Search =()=>import('../views/search/Search.vue')
+
 // 解决多次点击重复路由报错
 const originalPush = Router.prototype.push
 Router.prototype.push = function push(location) {
@@ -90,7 +93,17 @@ const router = new Router({
                 meta: {
                     keepAlive: true
                 }
-            }, {
+            },{
+                // 搜索页
+                path: 'search',
+                name: 'search',
+                component: Search,
+                // 是否数据缓存
+                meta: {
+                    keepAlive: true
+                }
+            },
+             {
                 // 分类
                 path: 'category',
                 name: 'category',

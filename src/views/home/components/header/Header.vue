@@ -10,7 +10,7 @@
 <template>
   <div class="wrapper"
        :style="showBgColor?'background-color: white;':''">
-    <div class="locationWrapper"
+    <!--<div class="locationWrapper"
          ref="location">
       <svg viewBox="0 0 30 30"
            class="icon iconLocation">
@@ -18,12 +18,14 @@
               fill-rule="evenodd"
               d="M14.521 30.445c.817.738 2.142.75 2.958 0 0 0 11.521-9.82 11.521-17.158C29 5.95 23.18 0 16 0S3 5.949 3 13.287c0 7.339 11.521 17.158 11.521 17.158zM16 18a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"></path>
       </svg>
+      
       <!-- 跳转到地图界面 -->
-      <router-link to="/dashboard/map"
+     <!-- <router-link to="/dashboard/map"
                    tag="span"
                    class="address">{{location}}</router-link>
       <svg-icon iconClass="up_real" />
-    </div>
+    </div>-->
+
     <div class="searchWrapper"
          ref="search"
          @click="goSearch">
@@ -80,11 +82,8 @@ export default {
     },
     // 到搜索界面
     goSearch () {
-      // 引入 Toast 组件后，会自动在 Vue 的 prototype 上挂载 $toast 方法，便于在组件内调用。
-      this.$toast({
-        message: '暂未实现哦~',
-        duration: 800
-      });
+    this.$router.push('/dashboard/Search')
+      
     }
   },
   beforeDestroy () {
@@ -176,12 +175,13 @@ export default {
 .searchContent {
   margin-top: 0.625rem;
   flex: 1;
+  padding-left: .6rem;
   margin-right: 2%;
   margin-left: 2%;
   border-radius: 3.125rem;
-  height: 1.875rem;
-  line-height: 1.875rem;
-  text-align: center;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  text-align: left;
   background: #f2f2f2;
   vertical-align: middle;
 }
@@ -204,7 +204,7 @@ export default {
   vertical-align: top;
   margin-left: 0.25rem;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.68rem;
   color: #999999;
 }
 
