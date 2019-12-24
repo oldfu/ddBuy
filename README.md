@@ -26,6 +26,8 @@
 
 **ddBuy**是一个移动端开源电商项目，它基于 [vue 2.x](https://github.com/vuejs/vue) 和 [vant 2.x](https://youzan.github.io/vant/#/zh-CN/intro)实现。使用了最新的Vue全家桶技术栈，以及一些优秀的开源库如[better-scroll](http://ustbhuangyi.github.io/better-scroll/doc/api.html)、 [moment.js](https://github.com/moment/moment/)、[twix.js](https://github.com/icambron/twix.js)、[pubsub-js](https://github.com/mroderick/PubSubJS),后台数据通过[Easy-Mock](https://github.com/easy-mock/easy-mock)搭建。相信不管你是处于哪个段位的攻城狮，本项目都能帮助到你。
 
+本项目是在源项目基础上的二次开发，感谢源作者打下的良好基础！
+
 ## [Release Note](https://github.com/Geek-James/ddBuy/releases)
 
 作者 **[极客James](https://juejin.im/user/5c4ebc72e51d4511dc7306ce)**
@@ -122,7 +124,7 @@ npm run build
 | IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
 
 ## 免责声明
-本项目为高仿项目,仅做技术交流和学习使用,非官方App,不建议用于商业目的,产生的一切侵权著作法律后果,与本作者无关。
+本项目为高仿项目,仅做技术交流和学习使用,非官方App,不建议用于商业目的,产生的一切侵权著作法律后果,与本作者，原作者无关。
 
 ## License
 
